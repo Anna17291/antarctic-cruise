@@ -14,7 +14,8 @@
 @import "global/reboot";
 @import "global/utils";
 @import "global/container";
-@import "global/global";
+@import "global/body";
+@import "global/html";
 
 // Blocks
 // ---------------------------------
@@ -25,35 +26,34 @@
 @import "blocks/custom-toggle";
 @import "blocks/custom-select";
 @import "blocks/main-header";
-@import "blocks/contacts";
-@import "blocks/sd-logo";
 @import "blocks/main-offer";
-@import "blocks/advantages-list";
+@import "blocks/main-container";
+@import "blocks/navigation-list";
+@import "blocks/main-advert";
+@import "blocks/main-advert-image";
 @import "blocks/advantages";
 @import "blocks/advantages-item";
-@import "blocks/about-company";
+@import "blocks/products-list";
+@import "blocks/card-back";
 @import "blocks/products";
 @import "blocks/products-item";
-@import "blocks/feedback-form";
-@import "blocks/footer-container";
-@import "blocks/footer-social-list";
-@import "blocks/footer-navigation-list";
-@import "blocks/navigation-item";
+@import "blocks/main-form";
+@import "blocks/form-container";
+@import "blocks/map";
+@import "blocks/contacts";
+@import "blocks/contacts-text";
+@import "blocks/main-footer";
 @import "blocks/footer-navigation";
-@import "blocks/footer-contacts";
-@import "blocks/contacts-list";
+@import "blocks/footer-navigation-list";
+@import "blocks/footer-social-list";
+@import "blocks/navigation-list-item";
+@import "blocks/footer-navigation-item";
+@import "blocks/main-advert-text";
+@import "blocks/main-form-text";
+@import "blocks/social-link-icon";
+@import "blocks/social-link";
 @import "blocks/footer-social";
-@import "blocks/company-description";
-@import "blocks/phones-list";
-@import "blocks/modal-container";
-@import "blocks/modal-page";
-@import "blocks/modal-page-content";
-@import "blocks/contacts-container";
-@import "blocks/noselect";
-@import "blocks/main-container";
-@import "blocks/no-overflow";
-@import "blocks/footer-social-item";
-@import "blocks/is-invalid";
+
 
 
 

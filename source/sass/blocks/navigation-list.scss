@@ -1,0 +1,26 @@
+.navigation-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top: 2px;
+  box-sizing: border-box;
+
+  @media (max-width: $tablet-width) {
+    margin: 0;
+  }
+
+  @media (max-width: $mobile-width) {
+    flex-direction: column;
+    display: none;
+  }
+}
+
+.navigation-list__item:not(:last-child) {
+  margin-right: 33px;
+
+  @media (max-width: $tablet-width) {
+    margin-right: 23px;
+
+  }
+}

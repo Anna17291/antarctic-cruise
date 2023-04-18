@@ -5,355 +5,417 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Магазин Smart Device, печатные платы">
-  <title>Smart Device</title>
+  <meta name="description" content="Описание проекта">
+  <title>ProjectName</title>
   <link rel="stylesheet" href="css/style.min.css">
-  <link rel="preload" href="fonts/PTMono-Regular.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/RobotoCondensed-Regular.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/RobotoCondensed-Bold.woff2" as="font" crossorigin="anonymous">
-
+  <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Montserrat-Medium.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body>
-  <header class="main-header">
-
-    <div class="main-header__wrapper">
-      <section class="main-header__introduce introduce">
-        <h2 class="visually-hidden">Логотип и слоган компании.</h2>
-        <a class="introduce__logo sd-logo" href="index.html">
-          <img class="sd-logo__image sd-logo__image--texted" loading="lazy" src="img/svg/logo-text.svg" width="215"
-            height="55" alt="Логотип Smart Device.">
-          <img class="sd-logo__image sd-logo__image--no-texted" loading="lazy" src="img/svg/logo-no-text.svg" width="35"
-            height="35" alt="Логотип Smart Device.">
-        </a>
-      </section>
-      <section class="main-header__contacts contacts">
-        <h2 class="visually-hidden">Контактные данные компании.</h2>
-        <ul class="contacts-list">
-          <li class="contacts-list__item">
-            <a class="contacts__email" href="mailto:info@sd.ru" title="Email.">
-              <span class="visually-hidden">Email.</span>
-              <p class="contacts__text">
-                info@sd.ru
-              </p>
-            </a>
-          </li>
-          <li class="contacts-list__item">
-            <a class="contacts__phone" href="tel:+74950005252" title="Телефон.">
-              <p class="contacts__text">
-                +7 (495) 000 52 52
-              </p>
-            </a>
-          </li>
-        </ul>
-      </section>
-      <button class="main-header__button noselect">Заказать звонок</button>
-    </div>
-
-  </header>
-  <main class="main-container">
-    <h1 class="visually-hidden">Магазин электронных комплектующих Smart Device.</h1>
-    <div class="main-container__wrapper">
-      <section class="main-container__main-offer main-offer">
-        <div class="main-offer__wrapper">
-          <h2 class="main-offer__header">Печатные платы</h2>
-          <p class="main-offer__description">производство и&nbsp;монтаж, поставка комплектующих, блоков и&nbsp;модулей
-          </p>
-          <a href="#form-section" class="main-offer__button main-offer__button--first noselect"> Получить бесплатную
-            консультацию</a>
-          <a href="#form-section" class="main-offer__button main-offer__button--second noselect">Бесплатная
-            консультация</a>
-        </div>
-      </section>
-      <section class="main-container__advantages advantages">
-        <div class="advantages__wrapper">
-          <h2 class="visually-hidden">Преимущества Smart Device.</h2>
-          <ul class="advantages__list advantages-list">
-            <li class="advantages-list__item advantages-item advantages-item--first">
-              <h3 class="advantages-item__header">Оперативные сроки</h3>
-              <p class="advantages-item__description">Усовершенствованная логистическая
-                система позволяет нам
-                просчитывать стоимость, производить и
-                доставлять заказы плат и&nbsp;комплектующих в&nbsp;самые короткие сроки</p>
-            </li>
-            <li class="advantages-list__item advantages-item advantages-item--second">
-              <h3 class="advantages-item__header">Крупные поставщики</h3>
-              <p class="advantages-item__description">Нашими поставщиками являются такие крупные мировые компании
-                как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с&nbsp;такими
-                компаниями обеспечивает хорошее
-                качество нашей продукции.</p>
-            </li>
-            <li class="advantages-list__item advantages-item advantages-item--third">
-              <h3 class="advantages-item__header">Полная конфиденциальность</h3>
-              <p class="advantages-item__description">По&nbsp;желанию клиента мы&nbsp;обеспечиваем полную
-                конфиденциальность.
-              </p>
-            </li>
-            <li class="advantages-list__item advantages-item advantages-item--fourth">
-              <h3 class="advantages-item__header">Персонализация стоимости</h3>
-              <p class="advantages-item__description">Мы&nbsp;подбираем определенную фабрику, поставщиков, вид
-                доставки, чтобы установить ту&nbsp;цену, которая Вас устраивает.
-              </p>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="main-container__about-company about-company">
-        <div class="about-company__wrapper">
-          <h2 class="about-company__header">О компании</h2>
-          <div class="about-company__description company-description">
-            <p class="company-description__paragraph company-description__paragraph--first">Мы&nbsp;поставляем
-              электронные
-              комплектующие, производим печатные платы и
-              предоставляем мировые технологии с&nbsp;1997&nbsp;года. Выполняем срочные заказы и&nbsp;пилотные образцы
-              до&nbsp;10&nbsp;дней.
-            </p>
-            <p class="company-description__paragraph company-description__paragraph--second">Наши
-              поставщики&nbsp;&mdash; мировые
-              производители электронных компонентов:
-              OSRAM, CREE, HOLGLITRONIC, REFOND. <span
-                class="company-description__paragraph company-description__paragraph--hidable">Печатные
-                платы и&nbsp;комплектующие Service Devices применяются на&nbsp;предприятиях Российских Железных Дорог
-                (РЖД),
-                РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители
-                светотехники России.</span>
-            </p>
-            <p class="company-description__paragraph company-description__paragraph--third visually-hidden">Smart
-              Device
-              &mdash;&nbsp;это команда
-              профессионалов. Через нас прошло более 1&nbsp;000&nbsp;000&nbsp;клиентов, 70% из&nbsp;которых
-              продолжают сотрудничество по&nbsp;сей день. На&nbsp;данный момент насчитывается более 14&nbsp;офисов
-              по&nbsp;всей стране и
-              20
-              городов присутствия.
-            </p>
-            <p class="company-description__paragraph company-description__paragraph--fourth visually-hidden">
-              Мы&nbsp;стремимся к&nbsp;постоянному развитию и&nbsp;повышению уровня качества продукции, производимой
-              внутри компании.
-              Использование инновационных технологий помогает экономить деньги и&nbsp;время наших клиентов.
-            </p>
+  <div class="wrapper">
+    <header class="main-header">
+      <div class="main-header__wrapper">
+        <section class="main-header__logo header-logo">
+          <h2 class="visually-hidden">Логотип Круизов в Антарктику.</h2>
+          <picture>
+            <source media="(max-width: 767px)" srcset="img/svg/main-logo.svg" width="42" height="22">
+            <source media="(max-width: 1023px)" srcset="img/svg/main-logo.svg" width="38" height="20">
+            <img class="header-logo__image" src="img/svg/main-logo.svg" width="70" height="38"
+              alt="Логотип круизов в Антарктику">
+          </picture>
+        </section>
+        <section class="main-header__navigation header-navigation">
+          <div class="header-navigation__wrapper">
+            <h2 class="visually-hidden">Навигация по сайту.</h2>
+            <nav class="header-navigation__navigation navigation">
+              <ul class="navigation__list navigation-list">
+                <li class="navigation-list__item navigation-list-item">
+                  <a class="navigation-list-item__link" href="#advantages">
+                    Преимущества</a>
+                </li>
+                <li class="navigation-list__item">
+                  <a class="navigation-list-item__link" href="#">
+                    Направления
+                  </a>
+                </li>
+                <li class="navigation-list__item">
+                  <a class="navigation-list-item__link" href="#products">
+                    Ближайшие круизы</a>
+                </li>
+                <li class="navigation-list__item">
+                  <a class="navigation-list-item__link" href="#contacts">Контакты</a>
+                </li>
+              </ul>
+            </nav>
           </div>
-          <button class="about-company__button about-company__button-open noselect">
-            Подробнее
-          </button>
-          <button class="about-company__button about-company__button-close visually-hidden noselect">
-            Свернуть
-          </button>
-        </div>
-      </section>
-      <section class="main-container__products products">
-        <div class="products__wrapper">
-          <h2 class="products__header products__header--first">Smart Device предлагает следующие товары и&nbsp;услуги
-          </h2>
-          <h2 class="products__header products__header--second">Товары и&nbsp;услуги Smart Device</h2>
-          <ul class="products__list products-list">
-            <li class="products-list__item products-item products-item--first">
-              <a class="products-item__link" href="#">
-                <h3 class="products-item__description">Производство<br>печатных плат</h3>
-              </a>
-            </li>
-            <li class="products-list__item products-item products-item--second">
-              <a class="products-item__link" href="#">
-                <h3 class="products-item__description">Монтаж печатных плат</h3>
-              </a>
-            </li>
-            <li class="products-list__item products-item products-item--third">
-              <a class="products-item__link" href="#">
-                <h3 class="products-item__description">Комплектующие<br>для светотехники</h3>
-              </a>
-            </li>
+        </section>
+      </div>
+    </header>
+    <main class="page-main">
+      <div class="main-container">
+        <section class="main-container__offer main-offer">
+          <div class="main-offer__wrapper">
+            <h1 class="main-offer__header">Круизы в&nbsp;Антарктику</h1>
+            <p class="main-offer__description">Волшебный мир айсбергов и&nbsp;пингвинов</p>
+          </div>
+        </section>
+        <section class="main-container__main-advert main-advert" id="main-advert">
+          <div class="main-advert__wrapper">
+            <div class="main-advert__text main-advert-text">
+              <h2 class="main-advert-text__header">Путешествие на&nbsp;край&nbsp;Земли</h2>
+              <p class="main-advert-text__description">Это волшебное путешествие поможет вам познакомиться поближе с
+                удивительным
+                миром Антарктики. Наш круизный лайнер отвезет вас на&nbsp;край Земли, где вы&nbsp;сможете увидеть:
+                ледяные
+                айсберги,
+                несколько видов пингвинов, китов, морских котиков и&nbsp;многое другое.</p>
+            </div>
+            <picture class="main-advert__image main-advert-image">
+              <img class="main-advert-image__image" src="img/offer/offer-desktop.webp"
+                srcset="img/offer/offer-desktop-2x.webp 2x" alt="Фотография пингвинов.">
+            </picture>
+          </div>
+        </section>
+        <section class="advantages" id="advantages">
+          <div class="advantages__wrapper">
+            <h2 class="advantages__header">Преимущества</h2>
+            <ul class="advantages__list advantages-list">
+              <li class="advantages-list__item advantages-item advantages-item--first">
+                <h3 class="advantages-item__header">
+                  Небольшой круизный&nbsp;лайнер
+                </h3>
+                <p class="advantages-item__description">
+                  Круизный лайнер, рассчитанный всего лишь на&nbsp;300&nbsp;гостей, поможет избежать шума
+                  и&nbsp;очередей и&nbsp;даст
+                  возможность насладиться видами и&nbsp;природой.
+                </p>
+              </li>
+              <li class="advantages-list__item advantages-item advantages-item--second">
+                <h3 class="advantages-item__header">
+                  Система все включено
+                </h3>
+                <p class="advantages-item__description">
+                  Все наши круизы работают по&nbsp;системе &laquo;Все Включено&raquo;. Великолепные блюда
+                  и&nbsp;безлимитный бар доступны для
+                  вас 24&nbsp;часа.
+                </p>
+              </li>
+              <li class="advantages-list__item advantages-item advantages-item--third">
+                <h3 class="advantages-item__header advantages-item__header--third">
+                  Экскурсионные туры на&nbsp;Zodiac
+                </h3>
+                <p class="advantages-item__description">
+                  Экскурсионные туры к&nbsp;берегам Антарктиды совершаются на&nbsp;оборудованных лодках типа Zodiac
+                  c&nbsp;опытными
+                  экскурсоводами.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="products" id="products">
+          <div class="products__wrapper">
+            <h2 class="products__header">Ближайшие круизы</h2>
+            <ul class="products__list products-list">
+              <li class="products-list__item products-item products-item--first" tabindex="0">
+                <img class="products-item__image" src="img/products/product1.webp" alt="Фото круиза Астория">
+                <h3 class="products-item__header">Круиз “Астория”</h3>
+                <div class="products-item__card-back card-back">
+                  <h3 class="card-back__header">Круиз “Астория”</h3>
+                  <h4 class="card-back__point">Маршрут</h4>
+                  <p class="card-back__description">Аргентина - Фолклендские острова - Антарктида</p>
+                  <h4 class="card-back__point">Порт отправления</h4>
+                  <p class="card-back__description">Ушуайя</p>
+                  <h4 class="card-back__point">Продолжительность</h4>
+                  <p class="card-back__description">11 дней</p>
+                  <h4 class="card-back__point">Цена</h4>
+                  <p class="card-back__description">от 11500 $</p>
+                  <a class="card-back__button" href="#">Забронировать</a>
+                </div>
+              </li>
+              <li class="products-list__item products-item products-item--second" tabindex="0">
+                <img class="products-item__image" src="img/products/product1.webp" alt="Фото круиза Элайн">
+                <h3 class="products-item__header">Круиз “Элайн”</h3>
+                <div class="products-item__card-back card-back">
+                  <h3 class="card-back__header">Круиз “Элайн”</h3>
+                  <h4 class="card-back__point">Маршрут</h4>
+                  <p class="card-back__description">Аргентина - Фолклендские острова - Антарктида - Чили</p>
+                  <h4 class="card-back__point">Порт отправления</h4>
+                  <p class="card-back__description">Буэнос-Айрес</p>
+                  <h4 class="card-back__point">Продолжительность</h4>
+                  <p class="card-back__description">20 дней</p>
+                  <h4 class="card-back__point">Цена</h4>
+                  <p class="card-back__description">от 14500 $</p>
+                  <a class="card-back__button" href="#">Забронировать</a>
+                </div>
+              </li>
+              <li class="products-list__item products-item products-item--third" tabindex="0">
+                <img class="products-item__image" src="img/products/product3.webp" alt="Фото круиза Атлантис.">
+                <h3 class="products-item__header">Круиз “Атлантис”</h3>
+                <div class="products-item__card-back card-back">
+                  <h3 class="card-back__header">Круиз “Атлантис”</h3>
+                  <h4 class="card-back__point">Маршрут</h4>
+                  <p class="card-back__description">Аргентина - Южная Георгия и Южные Сандвичевы Острова - Антарктида
+                  </p>
+                  <h4 class="card-back__point">Порт отправления</h4>
+                  <p class="card-back__description">Ушуайя</p>
+                  <h4 class="card-back__point">Продолжительность</h4>
+                  <p class="card-back__description">15 дней</p>
+                  <h4 class="card-back__point">Цена</h4>
+                  <p class="card-back__description">от 14500 $</p>
+                  <a class="card-back__button" href="#">Забронировать</a>
+                </div>
+              </li>
+              <li class="products-list__item products-item products-item--fourth" tabindex="0">
+                <img class="products-item__image" src="img/products/product4.webp" alt="Фото круиза Одиссей.">
+                <h3 class="products-item__header">Круиз “Одиссей”</h3>
+                <div class="products-item__card-back card-back">
+                  <h3 class="card-back__header">Круиз “Одиссей”</h3>
+                  <h4 class="card-back__point">Маршрут</h4>
+                  <p class="card-back__description">Чили - Антарктида
+                  </p>
+                  <h4 class="card-back__point">Порт отправления</h4>
+                  <p class="card-back__description">Пунта-Аренас</p>
+                  <h4 class="card-back__point">Продолжительность</h4>
+                  <p class="card-back__description">13 дней</p>
+                  <h4 class="card-back__point">Цена</h4>
+                  <p class="card-back__description">от 9700 $</p>
+                  <a class="card-back__button" href="#">Забронировать</a>
+                </div>
+              </li>
+              <li class="products-list__item products-item products-item--fifth" tabindex="0">
+                <img class="products-item__image" src="img/products/product5.webp" alt="Фото круиза Олимпия">
+                <h3 class="products-item__header">Круиз “Олимпия”</h3>
+                <div class="products-item__card-back card-back">
+                  <h3 class="card-back__header">Круиз “Олимпия”</h3>
+                  <h4 class="card-back__point">Маршрут</h4>
+                  <p class="card-back__description">Фолклендские острова - Южная Георгия - Антарктида</p>
 
-          </ul>
-        </div>
-      </section>
-      <section class="main-container__form feedback-form" id="form-section">
-        <div class="feedback-form__wrapper" data-form-validate data-callback="base">
-          <form action="https://echo.htmlacademy.ru" method="post">
-            <fieldset class="main-form__form">
-              <legend class="visually-hidden">
-                Форма для вопросов
-              </legend>
-              <h2 class="main-form__header">Остались вопросы? Задайте их&nbsp;нам!</h2>
-              <p class="main-form__description">Мы&nbsp;проконсультируем Вас бесплатно</p>
-              <div class="input-container" data-validate-type="text" data-limitation="name"
-                data-message-base="Поле обязательно к заполнению"
-                data-message-extra="Проверьте корректность заполнения поля" data-required="data-required">
-                <input id="user-name" type="text" placeholder="Имя" name="user-name" required>
-              </div>
-              <div class="input-container" data-validate-type="phone" data-on-input-validate="data-on-input-validate"
-                data-message-base="Поле обязательно к заполнению"
-                data-message-extra="Проверьте корректность заполнения поля" data-message-success="Поле заполнено верно"
-                data-required="data-required">
-                <input id="userphone" placeholder="Телефон" required name="userphone" type="tel">
-              </div>
-              <textarea id="user-message" placeholder="Ваш вопрос" name="user-question"></textarea>
-              <button class="main-form__button noselect">Задать вопрос</button>
-              <div class="input-container" data-validate-type="checkbox"
-                data-message-base="Поле обязательно к заполнению">
-                <label class="main-form__checkbox main-form-checkbox">
-                  <input type="checkbox" name="i-agree" required>
-                  <span class="main-form-checkbox__mark"></span>
-                  <p class="main-form-checkbox__description">Я&nbsp;согласен на&nbsp;обработку персональных данных</p>
-                </label>
-              </div>
-            </fieldset>
-          </form>
-        </div>
-      </section>
+                  <h4 class="card-back__point">Порт отправления</h4>
+                  <p class="card-back__description">Ушуайя</p>
+                  <h4 class="card-back__point">Продолжительность</h4>
+                  <p class="card-back__description">21 день</p>
+                  <h4 class="card-back__point">Цена</h4>
+                  <p class="card-back__description">от 18600 $</p>
+                  <a class="card-back__button" href="#">Забронировать</a>
+                </div>
+              </li>
+              <li class="products-list__item products-item products-item--sixs" tabindex="0">
+                <img class="products-item__image" src="img/products/product6.webp" alt="Фото круиза Аврора">
+                <h3 class="products-item__header">Круиз “Аврора”</h3>
+                <div class="products-item__card-back card-back">
+                  <h3 class="card-back__header">Круиз “Аврора”</h3>
+                  <h4 class="card-back__point">Маршрут</h4>
+                  <p class="card-back__description">Аргентина - Антарктида - Чили</p>
+                  <h4 class="card-back__point">Порт отправления</h4>
+                  <p class="card-back__description">Ушуайя</p>
+                  <h4 class="card-back__point">Продолжительность</h4>
+                  <p class="card-back__description">14 дней</p>
+                  <h4 class="card-back__point">Цена</h4>
+                  <p class="card-back__description">от 11700 $</p>
+                  <a class="card-back__button" href="#">Забронировать</a>
+                </div>
+              </li>
+              <li class="products-list__item products-item products-item--seventh" tabindex="0">
+                <img class="products-item__image" src="img/products/product7.webp" alt="Фото круиза Леонор">
+                <h3 class="products-item__header">Круиз “Леонор”</h3>
+                <div class="products-item__card-back card-back">
+                  <h3 class="card-back__header">Круиз “Леонор”</h3>
+                  <h4 class="card-back__point">Маршрут</h4>
+                  <p class="card-back__description">Чили - Южная Георгия - Антарктида - Аргентина</p>
+                  <h4 class="card-back__point">Порт отправления</h4>
+                  <p class="card-back__description">Пунта-Аренас</p>
+                  <h4 class="card-back__point">Продолжительность</h4>
+                  <p class="card-back__description">17 дней</p>
+                  <h4 class="card-back__point">Цена</h4>
+                  <p class="card-back__description">от 12500 $</p>
+                  <a class="card-back__button" href="#">Забронировать</a>
+                </div>
+              </li>
+              <li class="products-list__item products-item products-item--eights" tabindex="0">
+                <img class="products-item__image" src="img/products/product8.webp" alt="Фото круиза Минион">
+                <h3 class="products-item__header">Круиз “Минион - 1”</h3>
+                <div class="products-item__card-back card-back">
+                  <h3 class="card-back__header">Круиз “Минион - 1”</h3>
+                  <h4 class="card-back__point">Маршрут</h4>
+                  <p class="card-back__description">Аргентина - Антарктида</p>
+                  <h4 class="card-back__point">Порт отправления</h4>
+                  <p class="card-back__description">Ушуайя</p>
+                  <h4 class="card-back__point">Продолжительность</h4>
+                  <p class="card-back__description">11 дней</p>
+                  <h4 class="card-back__point">Цена</h4>
+                  <p class="card-back__description">от 12300 $</p>
+                  <a class="card-back__button" href="#">Забронировать</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="main-form">
+          <div class="main-form__wrapper">
+            <div class="main-form__text main-form-text">
+              <h2 class="main-form-text__header">Раннее бронирование</h2>
+              <p class="main-form-text__description">Забронируйте тур за&nbsp;3&#8209;6&nbsp;месяцев
+                до&nbsp;даты выезда и&nbsp;сэкономьте до&nbsp;50%</p>
+            </div>
+            <div class="form__container form-container" data-form-validate data-callback="base">
+              <form action="https://echo.htmlacademy.ru" method="post">
+                <fieldset>
+                  <legend class="visually-hidden">Форма для заявок.</legend>
+                  <h3>Оставьте заявку и&nbsp;мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время</h3>
+                  <div class="input-container" data-validate-type="text" data-limitation="name"
+                    data-message-base="Поле обязательно к заполнению"
+                    data-message-extra="Проверьте корректность заполнения поля" data-required="data-required">
+                    <input id="user-name" type="text" placeholder="Имя" name="user-name" required>
+                  </div>
+                  <div class="input-container" data-validate-type="phone"
+                    data-on-input-validate="data-on-input-validate" data-message-base="Поле обязательно к заполнению"
+                    data-message-extra="Проверьте корректность заполнения поля"
+                    data-message-success="Поле заполнено верно" data-required="data-required">
+                    <input id="userphone" placeholder="Телефон" name="userphone" type="tel" required>
+                  </div>
+
+                  <div class="input-container" data-validate-type="email"
+                    data-message-base="Поле обязательно к заполнению" data-required>
+                    <input id="useremail" placeholder="Email" name="useremail" type="email" required>
+                  </div>
+
+                  <div class="input-container" data-validate-type="checkbox"
+                    data-message-base="Поле обязательно к заполнению">
+                    <label class="form-wrapper__checkbox form-wrapper-checkbox">
+                      <input type="checkbox" name="i-agree" required>
+                      <span class="form-wrapper-checkbox__description">Я&nbsp;согласен на&nbsp;обработку моих
+                        персональных данных
+                      </span>
+                    </label>
+                  </div>
+                  <button class="form-wrapper__button noselect">Оставить заявку</button>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+        </section>
+        <section class="contacts" id="contacts">
+          <div class="contacts__wrapper">
+            <div class="contacts__map map">
+              <span class="visually-hidden">Мы на карте.</span>
+            </div>
+            <div class="contacts__text contacts-text">
+              <h2 class="visually-hidden">Наш адрес.</h2>
+              <p class="contacts-text__appeal">У&nbsp;вас ещё остались вопросы или сомнения?
+                Приезжайте к&nbsp;нам в&nbsp;офис и&nbsp;мы&nbsp;вам все расскажем.</p>
+              <p class="contacts-text__address">г. Санкт Петербург, ул.&nbspБольшая&nbspКонюшенная, 19/8</p>
+              <a class="contacts-text__phone" href="tel:+88002000000">8-800-200-00-00</a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="main-footer">
+      <div class="main-footer__container">
+        <section class="main-footer__logo footer-logo">
+          <h2 class="visually-hidden">Логотип круизов в Антарктику.</h2>
+          <picture>
+            <source media="(max-width: 1023px)" srcset="img/svg/main-logo.svg" width="38" height="20">
+            <img class="header-logo__image" src="img/svg/main-logo.svg" width="70" height="38"
+              alt="Логотип круизов в Антарктику">
+          </picture>
+        </section>
+        <section class="main-footer__navigation footer-navigation">
+          <div class="footer-navigation__wrapper">
+            <h2 class="visually-hidden">Навигация по сайту</h2>
+            <nav class="footer-navigation__navigation footer-navigation">
+              <ul class="footer-navigation__list footer-navigation-list">
+                <li class="footer-navigation-list__item">
+                  <a class="footer-navigation-item__link" href="#advantages">
+                    Преимущества</a>
+                </li>
+                <li class="footer-navigation-list__item"><a class="footer-navigation-item__link"
+                    href="#">Направления</a>
+                </li>
+                <li class="footer-navigation-list__item"><a class="footer-navigation-item__link"
+                    href="#products">Ближайшие круизы</a></li>
+                <li class="footer-navigation-list__item footer-navigation-item"><a class="footer-navigation-item__link"
+                    href="#contacts">Контакты</a></li>
+              </ul>
+            </nav>
+          </div>
+        </section>
+        <section class="main-footer__social footer-social">
+          <div class="footer-social__wrapper">
+            <h2 class="visually-hidden">Социальные сети.</h2>
+            <ul class="footer-social__list footer-social-list">
+              <li class="footer-social-list_item footer-social-item">
+                <a href="#" class="footer-social-item__link social-link social-link--ok">
+                  <picture>
+                    <source media="(max-width: 1023px)" srcset="img/svg/social/ok.svg" width="10" height="16">
+                    <img class="social-link__icon social-link-icon social-link-icon--ok" src="img/svg/social/ok.svg"
+                      width="12" height="20" alt="Логотип круизов в Антарктику">
+                  </picture>
+                  <span class="visually-hidden">Одноклассники.</span>
+                </a>
+              </li>
+              <li class="footer-social-list_item footer-social-item">
+                <a href="#" class="footer-social-item__link social-link social-link--yandex">
+                  <picture>
+                    <source media="(max-width: 1023px)" srcset="img/svg/social/ya.svg" width="16" height="16">
+                    <img class="social-link__icon social-link-icon social-link-icon--ya" src="img/svg/social/ya.svg"
+                      width="20" height="20" alt="Логотип круизов в Антарктику">
+                  </picture>
+                  <span class="visually-hidden">Яндекс.Дзен.</span>
+                </a>
+              </li>
+              <li class="footer-social-list_item footer-social-item">
+                <a href="#" class="footer-social-item__link social-link social-link--reddit">
+                  <picture>
+                    <source media="(max-width: 1023px)" srcset="img/svg/social/rd.svg" width="16" height="16">
+                    <img class="social-link__icon social-link-icon social-link-icon--reddit" src="img/svg/social/rd.svg"
+                      width="20" height="20" alt="Логотип круизов в Антарктику">
+                  </picture>
+                  <span class="visually-hidden">Reddit.</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Модалки -->
+  <div class="modal modal--preload" data-modal="feedback">
+    <div class="modal__wrapper">
+      <div class="modal__overlay" data-close-modal></div>
+      <div class="modal__content">
+        <p class="modal__description">Обычная модалка</p>
+        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+          <svg width="15" height="15">
+            <use xlink:href="img/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
     </div>
-  </main>
+  </div>
 
-  <footer class="footer-container">
-    <div class="footer-container__wrapper">
-      <section class="footer-container__social footer-social">
-        <div class="footer-social__wrapper">
-          <h2 class="visually-hidden">Логотип и соцсети</h2>
-          <a class="footer-social__logo" href="index.html">
-            <img class="footer-social__image" loading="lazy" src="img/svg/logo-text.svg" width="215" height="55"
-              alt="Логотип Smart Device.">
-          </a>
-          <ul class="footer-social__list footer-social-list">
-            <li class="footer-social-list_item footer-social-item">
-              <a href="#" class="footer-social-item__link social-link social-link--ok">
-                <svg class="social-link__icon" width="30" height="30" aria-hidden="true" focusable="false"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <use href="img/svg/sprite.svg#ok"></use>
-                </svg>
-                <span class="visually-hidden">Одноклассники</span>
-              </a>
-            </li>
-            <li class="footer-social-list_item footer-social-item">
-              <a href="#" class="footer-social-item__link social-link social-link--vk">
-                <svg class="social-link__icon" width="30" height="30" aria-hidden="true" focusable="false"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <use href="img/svg/sprite.svg#vk"></use>
-                </svg>
-                <span class="visually-hidden">ВКонтакте</span>
-              </a>
-            </li>
-            <li class="footer-social-list_item footer-social-item">
-              <a href="#" class="footer-social-item__link social-link social-link--pint">
-                <svg class="social-link__icon" width="30" height="30" aria-hidden="true" focusable="false"
-                  xmlns="http://www.w3.org/2000/svg" fill="currentColor">
-                  <use href="img/svg/sprite.svg#pint"></use>
-                </svg>
-                <span class="visually-hidden">Pinterest</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section
-        class="footer-container__navigation footer-container__navigation--closed footer-navigation footer-navigation--closed">
-        <h2 class="footer-navigation__header">Разделы сайта
-          <button class="footer-navigation__button footer-navigation__button--open noselect" title="Открыть навигацию.">
-          </button>
-          <button class="footer-navigation__button footer-navigation__button--close visually-hidden noselect"
-            title="Закрыть навигацию."></button>
-        </h2>
-        <nav class="footer-navigation__navigation footer-navigation__navigation--closed">
-          <ul class="footer-navigation__list footer-navigation-list">
-            <li class="footer-navigation-list__item navigation-item navigation-item--0">
-              <a class="navigation-item__link" href="#">О компании
-              </a>
-            </li>
-            <li class="footer-navigation-list__item navigation-item navigation-item--1">
-              <a class="navigation-item__link" href="#">Продукты</a>
-            </li>
-            <li class="footer-navigation-list__item navigation-item navigation-item--2">
-              <a class="navigation-item__link" href="#">Производство печатных плат</a>
-            </li>
-            <li class="footer-navigation-list__item navigation-item navigation-item--3">
-              <a class="navigation-item__link" href="#">Монтаж печатных плат</a>
-            </li>
-            <li class="footer-navigation-list__item navigation-item navigation-item--4">
-              <a class="navigation-item__link" href="#">Комплектующие</a>
-            </li>
-            <li class="footer-navigation-list__item navigation-item navigation-item--5">
-              <a class="navigation-item__link" href="#">Доставка</a>
-            </li>
-            <li class="footer-navigation-list__item navigation-item navigation-item--6">
-              <a class="navigation-item__link" href="#">Контакты</a>
-            </li>
-
-          </ul>
-        </nav>
-      </section>
-      <section class="footer-container__contacts footer-contacts footer-contacts--closed">
-        <h2 class="footer-contacts__header">Наш офис
-          <button class="footer-contacts__button footer-contacts__button--open noselect"
-            title="Открыть контакты."></button>
-          <button class="footer-contacts__button footer-contacts__button--close visually-hidden noselect"
-            title="Закрыть контакты."></button>
-        </h2>
-        <div class="contacts-container contacts-container--closed">
-          <p class="footer-contacts__address">г. Мытищи, Олимпийский проспект, д.10</p>
-          <ul class="footer-contacts__phones-list phones-list">
-            <li class="phones-list__item">
-              <a class="phones-list__link" href="tel:+74955894050">+7 (495) 589-40-50</a>
-            </li>
-            <li class="phones-list__item">
-              <a class="phones-list__link" href="tel:+79253895829">
-                +7 (925) 389-58-29
-              </a>
-            </li>
-            <li class="phones-list__item">
-              <a class="phones-list__link" href="tel:+79253895829">
-                +7 (925) 364-78-13
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-    </div>
-  </footer>
-
-  <div class="modal-container modal-container--closed">
-    <div class="modal-page" id="modal-page">
-      <section class="modal-page__content modal-page-content" data-form-validate data-callback="base">
-        <form class="modal-page__form" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="modal-page__fieldset">
-            <legend class="visually-hidden">
-              Форма для вопросов
-            </legend>
-            <h2 class="modal-page__header">Закажите звонок</h2>
-            <p class="modal-page__description">Оставьте контакты, мы&nbsp;проконсультируем вас бесплатно в&nbsp;удобное
-              время
-            </p>
-            <div class="modal-input-container" data-validate-type="text" data-limitation="name"
-              data-message-base="Поле обязательно к заполнению"
-              data-message-extra="Проверьте корректность заполнения поля" data-required="data-required">
-              <input class="modal-page__input modal-page__input--name" id="name" type="text" placeholder="Имя" autofocus
-                required name="mame" tabindex="1">
-            </div>
-            <div class="input-container modal-input-container" data-validate-type="phone"
-              data-on-input-validate="data-on-input-validate" data-message-base="Поле обязательно к заполнению"
-              data-message-extra="Проверьте корректность заполнения поля" data-message-success="Поле заполнено верно"
-              data-required="data-required">
-              <input class="modal-page__input modal-page__input--phone" id="phone" type="text" placeholder="Телефон"
-                required name="phone" minlength="10" tabindex="2">
-            </div>
-            <textarea class="modal-page__input modal-page__input--message" id="message" placeholder="Ваш вопрос"
-              type="text" name="question" tabindex="3"></textarea>
-            <button class="modal-page__button noselect" tabindex="4">Отправить</button>
-            <div class="input-container modal-input-checkbox-container" data-validate-type="checkbox"
-              data-message-base="Поле обязательно к заполнению">
-              <label class="modal-page__checkbox modal-page-checkbox">
-                <input class="modal-page-checkbox__input" type="checkbox" name="i-agree" required tabindex="5">
-                <span class="modal-page-checkbox__mark"></span>
-                <p class="modal-page-checkbox__description">Я&nbsp;согласен на&nbsp;обработку персональных данных</p>
-              </label>
-            </div>
-          </fieldset>
-        </form>
-        <button class="modal-page__close-button noselect" tabindex="6"></button>
-      </section>
+  <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
+    <div class="modal__wrapper">
+      <div class="modal__overlay" data-close-modal></div>
+      <div class="modal__content">
+        <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
+        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+          <svg width="15" height="15">
+            <use xlink:href="img/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
     </div>
   </div>
 
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>
-
 </body>
 
 </html>

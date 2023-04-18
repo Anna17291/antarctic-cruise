@@ -1,0 +1,149 @@
+.form-container {
+  width: 403px;
+
+  @media (max-width: $mobile-width) {
+    width: 290px;
+  }
+}
+
+.form-container form {
+  background-color: #011c40;
+  color: #f9fbfd;
+  min-height: 455px;
+  padding: 25px 50px 50px;
+  width: 100%;
+  box-sizing: border-box;
+
+  @media (max-width: $mobile-width) {
+    padding: 17px 30px 40px 27px;
+  }
+}
+
+.form-container fieldset {
+  border: 0;
+  padding: 0;
+}
+
+.form-container h3 {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 500;
+  margin-bottom: 27px;
+
+  @media (max-width: $tablet-width) {
+    text-align: left;
+  }
+
+  @media (max-width: $mobile-width) {
+    line-height: 25px;
+    text-align: center;
+  }
+}
+
+.form-container input {
+  width: 303px;
+  height: 43px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  border: 0;
+
+  @media (max-width: $mobile-width) {
+    width: 230px;
+  }
+}
+
+.form-container input {
+  padding: 11px 16px;
+}
+
+.form-container label {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  padding-left: 10px;
+  box-sizing: border-box;
+
+  @media (max-width: $mobile-width) {
+    margin-top: 1px;
+    align-items: center;
+    margin-bottom: 27px;
+  }
+}
+
+.form-container label input {
+  width: 1px;
+  height: 1px;
+  margin-right: 13px;
+  position: relative;
+  padding: 0;
+
+  @media (max-width: $mobile-width) {
+    margin-top: 5px;
+    margin-bottom: 0;
+    margin-right: 17px;
+  }
+}
+
+.form-container label input::after {
+  width: 18px;
+  height: 18px;
+  background-color: #F9FBFD;
+  top: -5px;
+  left: -10px;
+  position: absolute;
+  content: "";
+
+  @media (max-width: $mobile-width) {
+    top: -12px;
+    left: -9px;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.form-container label input:checked::after {
+  width: 18px;
+  background-color: #F9FBFD;
+  height: 18px;
+  background-image: url("../img/svg/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  top: -5px;
+  left: -10px;
+  position: absolute;
+  content: "";
+
+  @media (max-width: $mobile-width) {
+    top: 3px
+  }
+}
+
+.form-container label input:hover::after,
+.form-container label input:focus::after {
+  background-color: #809bbe;
+}
+
+.form-container label span {
+  font-size: 10px;
+  line-height: 13px;
+  margin-top: -2px;
+
+  @media (max-width: $mobile-width) {
+    text-align: left;
+    line-height: 12px;
+    max-width: 150px;
+  }
+}
+
+.form-container button {
+  width: 100%;
+  min-height: 43px;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 600;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 0;
+}

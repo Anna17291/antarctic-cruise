@@ -1,0 +1,57 @@
+.main-form {
+  background-image: url("../img/form/form-desktop.jpg");
+  width: 100%;
+  background-size: cover;
+  min-height: 555px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+
+  @media (max-width: $tablet-width) {
+    padding-bottom: 100px;
+  }
+
+  @media (max-width: $mobile-width) {
+    min-height: 760px;
+    padding-bottom: 65px;
+  }
+}
+
+.main-form__wrapper {
+  max-width: 1040px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 86px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 60px;
+  }
+}
+
+.main-form__text {
+  width: 47.4%;
+  margin-right: 13.8%;
+  padding-bottom: 3px;
+  margin-top: -10px;
+
+  @media (max-width: $tablet-width) {
+    margin-right: 0;
+    width: 80%;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 33px;
+    width: 88.6%;
+  }
+}
