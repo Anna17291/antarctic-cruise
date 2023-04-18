@@ -1,0 +1,189 @@
+.products-item {
+  width: 28.5%;
+  max-width: 350px;
+  height: 650px;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+  margin: 0 0 30px 0;
+  box-sizing: border-box;
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 96%;
+    height: 250px;
+    max-width: 750px;
+    box-sizing: border-box;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 5px 0;
+  }
+}
+
+.products-item__link {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.products-item:not(:nth-child(3n)) {
+  margin-right: 7.1%;
+
+  @media (max-width: $tablet-width) {
+    margin-right: 0;
+  }
+}
+
+.products-item__description {
+  color: #ffffff;
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+  width: 65%;
+  padding-left: 43px;
+  padding-top: 48px;
+  margin-top: 0;
+  box-sizing: border-box;
+
+  @media (max-width: $tablet-width) {
+    width: 193px;
+    padding-top: 37px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-left: 30px;
+    font-size: 18px;
+    padding-top: 20px;
+    width: 163px;
+  }
+}
+
+.products-item--first {
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/goods/desktop/goods-desktop-first.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #041827;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/goods/desktop/goods-desktop-first-2x.webp");
+      background-size: 350px auto;
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    background-image: url("../img/goods/tablet/goods-tablet-first.webp");
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/goods/tablet/goods-tablet-first-2x.webp");
+      background-size: cover;
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    background-image: url("../img/goods/mobile/goods-mobile-first.webp");
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/goods/mobile/goods-mobile-first-2x.webp");
+      background-size: cover;
+    }
+  }
+}
+
+.products-item--second {
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/goods/desktop/goods-desktop-second.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #041827;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/goods/desktop/goods-desktop-second-2x.webp");
+      background-size: 350px auto;
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    background-image: url("../img/goods/tablet/goods-tablet-second.webp");
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/goods/tablet/goods-tablet-second-2x.webp");
+      background-size: cover;
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    background-image: url("../img/goods/mobile/goods-mobile-second.webp");
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/goods/mobile/goods-mobile-second-2x.webp");
+      background-size: cover;
+    }
+  }
+}
+
+.products-item--third {
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/goods/desktop/goods-desktop-third.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #041827;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/goods/desktop/goods-desktop-third-2x.webp");
+      background-size: 350px auto;
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    background-image: url("../img/goods/tablet/goods-tablet-third.webp");
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/goods/tablet/goods-tablet-third-2x.webp");
+      background-size: cover;
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    background-image: url("../img/goods/mobile/goods-mobile-third.webp");
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/goods/mobile/goods-mobile-third-2x.webp");
+      background-size: cover;
+    }
+  }
+}
+
+
+.products-item::before {
+  background: url("../img/svg/arrow-goods.svg") no-repeat;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: 0;
+  padding: 0;
+  margin: 0;
+
+  @media (max-width: $mobile-width) {
+    background-size: 40px 40px;
+    right: -20px;
+    bottom: -20px;
+  }
+}

@@ -1,0 +1,24 @@
+.company-description__paragraph {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  margin-top: 14px;
+  margin-bottom: 18px;
+
+  @media (max-width: $tablet-width) {
+    margin: 13px 0 24px;
+    line-height: 21px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 17px;
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
+
+.company-description__paragraph--hidable {
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}
