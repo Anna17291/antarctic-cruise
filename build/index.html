@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Описание проекта">
+  <meta name="description" content="Круизы в Антарктику">
   <title>ProjectName</title>
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" crossorigin="anonymous">
@@ -20,12 +20,14 @@
       <div class="main-header__wrapper">
         <section class="main-header__logo header-logo">
           <h2 class="visually-hidden">Логотип Круизов в Антарктику.</h2>
-          <picture>
-            <source media="(max-width: 767px)" srcset="img/svg/main-logo.svg" width="42" height="22">
-            <source media="(max-width: 1023px)" srcset="img/svg/main-logo.svg" width="38" height="20">
-            <img class="header-logo__image" src="img/svg/main-logo.svg" width="70" height="38"
-              alt="Логотип круизов в Антарктику">
-          </picture>
+          <a class="main-header__logo-link" href="#index.html">
+            <picture>
+              <source media="(max-width: 767px)" srcset="img/svg/main-logo.svg" width="42" height="22">
+              <source media="(max-width: 1023px)" srcset="img/svg/main-logo.svg" width="38" height="20">
+              <img class="header-logo__image" src="img/svg/main-logo.svg" width="70" height="38"
+                alt="Логотип круизов в Антарктику">
+            </picture>
+          </a>
         </section>
         <section class="main-header__navigation header-navigation">
           <div class="header-navigation__wrapper">
@@ -52,6 +54,9 @@
             </nav>
           </div>
         </section>
+        <button class="navigation__toggle navigation-toggle">
+          <span class="visually-hidden">Открыть навигацию.</span>
+        </button>
       </div>
     </header>
     <main class="page-main">
@@ -121,7 +126,10 @@
             <h2 class="products__header">Ближайшие круизы</h2>
             <ul class="products__list products-list">
               <li class="products-list__item products-item products-item--first" tabindex="0">
-                <img class="products-item__image" src="img/products/product1.webp" alt="Фото круиза Астория">
+                <picture>
+                  <img class="products-item__image" src="img/products/product1.webp"
+                    srcset="img/products/product1-2x.webp 2x" alt="Фото круиза Астория">
+                </picture>
                 <h3 class="products-item__header">Круиз “Астория”</h3>
                 <div class="products-item__card-back card-back">
                   <h3 class="card-back__header">Круиз “Астория”</h3>
@@ -137,7 +145,10 @@
                 </div>
               </li>
               <li class="products-list__item products-item products-item--second" tabindex="0">
-                <img class="products-item__image" src="img/products/product1.webp" alt="Фото круиза Элайн">
+                <picture>
+                  <img class="products-item__image" src="img/products/product1.webp"
+                    srcset="img/products/product1-2x.webp 2x" alt="Фото круиза Элайн">
+                </picture>
                 <h3 class="products-item__header">Круиз “Элайн”</h3>
                 <div class="products-item__card-back card-back">
                   <h3 class="card-back__header">Круиз “Элайн”</h3>
@@ -153,7 +164,10 @@
                 </div>
               </li>
               <li class="products-list__item products-item products-item--third" tabindex="0">
-                <img class="products-item__image" src="img/products/product3.webp" alt="Фото круиза Атлантис.">
+                <picture>
+                  <img class="products-item__image" src="img/products/product3.webp"
+                    srcset="img/products/product3-2x.webp 2x" alt="Фото круиза Атлантис.">
+                </picture>
                 <h3 class="products-item__header">Круиз “Атлантис”</h3>
                 <div class="products-item__card-back card-back">
                   <h3 class="card-back__header">Круиз “Атлантис”</h3>
@@ -170,7 +184,10 @@
                 </div>
               </li>
               <li class="products-list__item products-item products-item--fourth" tabindex="0">
-                <img class="products-item__image" src="img/products/product4.webp" alt="Фото круиза Одиссей.">
+                <picture>
+                  <img class="products-item__image" src="img/products/product4.webp"
+                    srcset="img/products/product4-2x.webp 2x" alt="Фото круиза Одиссей.">
+                </picture>
                 <h3 class="products-item__header">Круиз “Одиссей”</h3>
                 <div class="products-item__card-back card-back">
                   <h3 class="card-back__header">Круиз “Одиссей”</h3>
@@ -187,7 +204,10 @@
                 </div>
               </li>
               <li class="products-list__item products-item products-item--fifth" tabindex="0">
-                <img class="products-item__image" src="img/products/product5.webp" alt="Фото круиза Олимпия">
+                <picture>
+                  <img class="products-item__image" src="img/products/product5.webp"
+                    srcset="img/products/product5-2x.webp 2x" alt="Фото круиза Олимпия.">
+                </picture>
                 <h3 class="products-item__header">Круиз “Олимпия”</h3>
                 <div class="products-item__card-back card-back">
                   <h3 class="card-back__header">Круиз “Олимпия”</h3>
@@ -204,7 +224,10 @@
                 </div>
               </li>
               <li class="products-list__item products-item products-item--sixs" tabindex="0">
-                <img class="products-item__image" src="img/products/product6.webp" alt="Фото круиза Аврора">
+                <picture>
+                  <img class="products-item__image" src="img/products/product6.webp"
+                    srcset="img/products/product6-2x.webp 2x" alt="Фото круиза Аврора.">
+                </picture>
                 <h3 class="products-item__header">Круиз “Аврора”</h3>
                 <div class="products-item__card-back card-back">
                   <h3 class="card-back__header">Круиз “Аврора”</h3>
@@ -220,7 +243,10 @@
                 </div>
               </li>
               <li class="products-list__item products-item products-item--seventh" tabindex="0">
-                <img class="products-item__image" src="img/products/product7.webp" alt="Фото круиза Леонор">
+                <picture>
+                  <img class="products-item__image" src="img/products/product7.webp"
+                    srcset="img/products/product7-2x.webp 2x" alt="Фото круиза Леонор.">
+                </picture>
                 <h3 class="products-item__header">Круиз “Леонор”</h3>
                 <div class="products-item__card-back card-back">
                   <h3 class="card-back__header">Круиз “Леонор”</h3>
@@ -236,7 +262,10 @@
                 </div>
               </li>
               <li class="products-list__item products-item products-item--eights" tabindex="0">
-                <img class="products-item__image" src="img/products/product8.webp" alt="Фото круиза Минион">
+                <picture>
+                  <img class="products-item__image" src="img/products/product8.webp"
+                    srcset="img/products/product8-2x.webp 2x" alt="Фото круиза Минион.">
+                </picture>
                 <h3 class="products-item__header">Круиз “Минион - 1”</h3>
                 <div class="products-item__card-back card-back">
                   <h3 class="card-back__header">Круиз “Минион - 1”</h3>
@@ -271,18 +300,16 @@
                     data-message-extra="Проверьте корректность заполнения поля" data-required="data-required">
                     <input id="user-name" type="text" placeholder="Имя" name="user-name" required>
                   </div>
-                  <div class="input-container" data-validate-type="phone"
-                    data-on-input-validate="data-on-input-validate" data-message-base="Поле обязательно к заполнению"
+                  <div class="input-container" data-on-input-validate="data-on-input-validate"
+                    data-validate-type="phone" data-message-base="Поле обязательно к заполнению"
                     data-message-extra="Проверьте корректность заполнения поля"
                     data-message-success="Поле заполнено верно" data-required="data-required">
                     <input id="userphone" placeholder="Телефон" name="userphone" type="tel" required>
                   </div>
-
                   <div class="input-container" data-validate-type="email"
                     data-message-base="Поле обязательно к заполнению" data-required>
                     <input id="useremail" placeholder="Email" name="useremail" type="email" required>
                   </div>
-
                   <div class="input-container" data-validate-type="checkbox"
                     data-message-base="Поле обязательно к заполнению">
                     <label class="form-wrapper__checkbox form-wrapper-checkbox">
@@ -301,13 +328,17 @@
         <section class="contacts" id="contacts">
           <div class="contacts__wrapper">
             <div class="contacts__map map">
+              <iframe class="map__iframe"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037876728594!2d30.320472477109544!3d59.93871647491513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1682007793042!5m2!1sru!2sru"
+                style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
               <span class="visually-hidden">Мы на карте.</span>
             </div>
             <div class="contacts__text contacts-text">
               <h2 class="visually-hidden">Наш адрес.</h2>
               <p class="contacts-text__appeal">У&nbsp;вас ещё остались вопросы или сомнения?
                 Приезжайте к&nbsp;нам в&nbsp;офис и&nbsp;мы&nbsp;вам все расскажем.</p>
-              <p class="contacts-text__address">г. Санкт Петербург, ул.&nbspБольшая&nbspКонюшенная, 19/8</p>
+              <p class="contacts-text__address">г. Санкт Петербург, ул.&nbsp;Большая&nbsp;Конюшенная, 19/8</p>
               <a class="contacts-text__phone" href="tel:+88002000000">8-800-200-00-00</a>
             </div>
           </div>
@@ -383,7 +414,44 @@
         </section>
       </div>
     </footer>
+
+    <div class="modal-container modal-container--closed">
+      <div class="modal-page" id="modal-page">
+        <div class="modal-content">
+
+
+
+          <svg class="modal-page__logo" aria-hidden="true" focusable="false" width="42" height="22" fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg">
+            <use href="img/sprite/sprite.svg#logo"></use>
+          </svg>
+
+          <nav class="modal-page__navigation modal-navigation modal-navigation--opened">
+            <ul class="modal-navigation__list modal-navigation-list">
+              <li class="modal-navigation-list__item modal-item modal-item--first">
+                <a class="modal-item__link" href="#advantages">
+                  Преимущества</a>
+              </li>
+              <li class="modal-navigation-list__item modal-item modal-item--second">
+                <a class="modal-item__link" href="#">
+                  Направления
+                </a>
+              </li>
+              <li class="modal-navigation-list__item modal-item modal-item--third">
+                <a class="modal-item__link" href="#products">
+                  Ближайшие круизы</a>
+              </li>
+              <li class="modal-navigation-list__item modal-item modal-item--fourth">
+                <a class="modal-item__link" href="#contacts">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <button class="modal-page__close-button"></button>
+        </div>
+      </div>
+    </div>
   </div>
+
 
   <!-- Модалки -->
   <div class="modal modal--preload" data-modal="feedback">
@@ -416,6 +484,7 @@
 
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>
+
 </body>
 
 </html>

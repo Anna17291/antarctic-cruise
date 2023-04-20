@@ -5,7 +5,6 @@
   padding: 0;
   margin: 0;
   flex-wrap: wrap;
-
 }
 
 .footer-social-list_item {
@@ -13,10 +12,14 @@
   height: 20px;
   margin-bottom: 10px;
 
-
   @media (max-width: $tablet-width) {
     width: 16px;
     height: 16px;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
   }
 }
 

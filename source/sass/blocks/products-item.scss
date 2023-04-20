@@ -3,15 +3,15 @@
 }
 
 .products-item:hover .products-item__image,
-.products-item:focus .products-item__image {
+.products-item:focus .products-item__image,
+.products-item:focus-within .products-item__image {
   visibility: hidden;
 }
 
 .products-item:hover .card-back,
-.products-item:focus .card-back {
+.products-item:focus .card-back .products-item:focus-within .card-back {
   visibility: visible;
 }
-
 
 .products-item__image {
   position: absolute;
@@ -22,12 +22,13 @@
   height: 100%;
 }
 
-.products-item:hover {
+.products-item:hover,
+.products-item:focus-within {
   background-color: #011C40;
 }
 
 .products-item__header {
-  color: #F9FBFD;
+  color: #f9fbfd;
   z-index: 2;
   position: absolute;
   bottom: 5px;
@@ -49,10 +50,7 @@
 }
 
 .products-item:hover .products-item__header,
-.products-item:focus .products-item__header {
+.products-item:focus .products-item__header,
+.products-item:focus-within .products-item__header {
   display: none;
-}
-
-.products-item {
-  position: relative;
 }

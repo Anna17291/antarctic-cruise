@@ -89,7 +89,7 @@
 .form-container label input::after {
   width: 18px;
   height: 18px;
-  background-color: #F9FBFD;
+  background-color: #f9fbfd;
   top: -5px;
   left: -10px;
   position: absolute;
@@ -105,7 +105,7 @@
 
 .form-container label input:checked::after {
   width: 18px;
-  background-color: #F9FBFD;
+  background-color: #f9fbfd;
   height: 18px;
   background-image: url("../img/svg/arrow.svg");
   background-repeat: no-repeat;
@@ -116,7 +116,10 @@
   content: "";
 
   @media (max-width: $mobile-width) {
-    top: 3px
+    top: -12px;
+    left: -9px;
+    width: 20px;
+    height: 20px;
   }
 }
 
@@ -146,4 +149,9 @@
   padding: 10px;
   box-sizing: border-box;
   border: 0;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
 }
