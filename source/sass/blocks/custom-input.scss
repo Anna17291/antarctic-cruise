@@ -1,7 +1,6 @@
 .custom-input,
 .custom-textarea {
   position: relative;
-
   display: flex;
   width: 530px;
   padding: 14px 0 28px;
@@ -28,11 +27,9 @@
       min-height: 48px;
       margin-left: auto;
       padding: 10px;
-
       border: 2px solid rgba(#000000, 0.2);
       border-radius: 5px;
       outline: none;
-
       transition: border 0.3s ease;
 
       @media screen and (max-width: 767px) {
@@ -60,11 +57,8 @@
     position: absolute;
     right: 0;
     bottom: 35px;
-
     color: #ff1553;
-
     opacity: 0;
-
     transition: opacity 0.3s ease;
 
     @media screen and (max-width: 767px) {
@@ -73,6 +67,7 @@
   }
 
   &.is-invalid {
+
     input,
     textarea {
       border: 2px solid #ff1553;

@@ -3,7 +3,6 @@
   font-size: 18px;
   line-height: 27px;
   font-weight: 300;
-
   display: flex;
   width: 500px;
   padding: 14px 0 10px 36px;
@@ -23,7 +22,6 @@
 
   input {
     position: absolute;
-
     width: 1px;
     height: 1px;
     margin: -1px;
@@ -33,9 +31,7 @@
 
   label {
     position: relative;
-
     padding-left: 52px;
-
     cursor: pointer;
 
     span {
@@ -49,12 +45,9 @@
       position: absolute;
       top: 0;
       left: 0;
-
       width: 28px;
       height: 28px;
-
       border: 1.5px solid #2c39f2;
-
       transition: border 0.3s ease;
 
       &::before {
@@ -62,14 +55,10 @@
         position: absolute;
         top: 50%;
         left: 50%;
-
         width: 20px;
         height: 20px;
-
         background-color: rgba(#2c39f2, 0);
-
         transform: translate(-50%, -50%);
-
         transition: background-color 0.3s ease;
       }
     }
@@ -80,13 +69,10 @@
       position: absolute;
       top: 0;
       left: 0;
-
       width: 28px;
       height: 28px;
-
       border: 1px solid #2c39f2;
       border-radius: 50%;
-
       transition: border 0.3s ease;
 
       &::before {
@@ -94,21 +80,17 @@
         position: absolute;
         top: 50%;
         left: 50%;
-
         width: 20px;
         height: 20px;
-
         color: rgba(255, 255, 255, 0);
-
         border-radius: 50%;
         transform: translate(-50%, -50%);
-
         transition: color 0.3s ease;
       }
     }
   }
 
-  input:checked + .custom-toggle__icon {
+  input:checked+.custom-toggle__icon {
     border: 1.5px solid #2c39f2;
 
     &::before {
