@@ -1891,7 +1891,6 @@ html {
   position: relative;
   padding: 0;
   cursor: pointer;
-  -webkit-appearance: none;
 }
 
 .form-container label input::after {
