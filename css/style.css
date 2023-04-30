@@ -1886,6 +1886,8 @@ html {
   width: 1px;
   height: 1px;
   margin-right: 13px;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
   position: relative;
   padding: 0;
   cursor: pointer;
