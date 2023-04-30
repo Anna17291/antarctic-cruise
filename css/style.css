@@ -1885,12 +1885,13 @@ html {
 .form-container label input {
   width: 1px;
   height: 1px;
-  margin-right: 13px;
+  margin-right: 17px;
   -ms-flex-item-align: start;
   align-self: flex-start;
   position: relative;
   padding: 0;
   cursor: pointer;
+  margin-left: -5px;
 }
 
 .form-container label input::after {
@@ -1898,7 +1899,7 @@ html {
   height: 18px;
   background-color: #f9fbfd;
   top: -5px;
-  left: -10px;
+  left: -5px;
   position: absolute;
   content: "";
 }
@@ -1911,7 +1912,7 @@ html {
   background-repeat: no-repeat;
   background-position: center;
   top: -5px;
-  left: -10px;
+  left: -5px;
   position: absolute;
   content: "";
 }
@@ -3018,19 +3019,19 @@ html {
   .form-container label input {
     margin-top: 5px;
     margin-bottom: 0;
-    margin-right: 17px;
+    margin-right: 20px;
   }
 
   .form-container label input::after {
     top: -12px;
-    left: -9px;
+    left: -4px;
     width: 20px;
     height: 20px;
   }
 
   .form-container label input:checked::after {
     top: -12px;
-    left: -9px;
+    left: -4px;
     width: 20px;
     height: 20px;
   }
