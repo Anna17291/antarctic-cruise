@@ -24,11 +24,15 @@
   margin: 0 auto;
 
   @media (max-width: $tablet-width) {
-    max-width: 678px;
+    //max-width: 678px;
+    padding-left: 35px;
+    padding-right: 35px;
   }
 
   @media (max-width: $mobile-width) {
     flex-direction: column-reverse;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 

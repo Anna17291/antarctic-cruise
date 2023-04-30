@@ -36,7 +36,8 @@
   }
 
   @media (max-width: $mobile-width) {
-    min-height: 505px;
+    min-height: 500px;
+    padding-top: 85px;
     background-image: url("../img/main-image/main-image-mobile.webp");
     background-size: cover;
 
@@ -49,16 +50,18 @@
 
 .main-offer__wrapper {
   max-width: 1180px;
-  padding: 0 25.5% 10px 10px;
+
+  width: 100%;
+  padding: 0 10px 10px 10px;
   color: #f9fbfd;
+  padding-left: 105px;
+  margin: 0 auto;
 
   @media (max-width: $tablet-width) {
     width: 100%;
-    padding-left: 0;
-    padding-right: 10px;
+    padding: 0 35px 10px 35px;
     padding-bottom: 0;
     margin: 0 auto 10px;
-    max-width: 678px;
   }
 
   @media (max-width: $mobile-width) {

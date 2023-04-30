@@ -1,6 +1,6 @@
 .main-advert {
   width: 100%;
-  padding: 10px;
+  //padding: 10px;
   padding: 103px 10px 145px;
   min-height: 556px;
 
@@ -22,12 +22,17 @@
   box-sizing: border-box;
 
   @media (max-width: $tablet-width) {
-    max-width: 678px;
+    //max-width: 678px;
+    padding-left: 35px;
+    padding-right: 35px;
   }
 
   @media (max-width: $mobile-width) {
     display: flex;
     flex-direction: column;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 5px;
   }
 }
 

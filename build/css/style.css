@@ -1391,8 +1391,11 @@ html {
 
 .main-offer__wrapper {
   max-width: 1180px;
-  padding: 0 25.5% 10px 10px;
+  width: 100%;
+  padding: 0 10px 10px 10px;
   color: #f9fbfd;
+  padding-left: 105px;
+  margin: 0 auto;
 }
 
 .main-offer__header {
@@ -1438,7 +1441,6 @@ html {
 
 .main-advert {
   width: 100%;
-  padding: 10px;
   padding: 103px 10px 145px;
   min-height: 556px;
 }
@@ -1584,23 +1586,24 @@ html {
 }
 
 .products-list {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[4];
-  grid-template-columns: repeat(4, 1fr);
-  -webkit-column-gap: 30px;
-  -moz-column-gap: 30px;
-  column-gap: 30px;
-  row-gap: 30px;
   list-style-type: none;
   padding: 0;
   margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .products-list__item {
-  width: auto;
-  height: auto;
-  min-height: 386px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1611,6 +1614,8 @@ html {
   -webkit-box-align: end;
   -ms-flex-align: end;
   align-items: flex-end;
+  width: 260px;
+  height: 386px;
 }
 
 .card-back {
@@ -1629,6 +1634,7 @@ html {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  overflow-y: auto;
 }
 
 .card-back__header {
@@ -1686,7 +1692,7 @@ html {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding: 85px 10px 120px;
+  padding: 85px 10px 90px;
   min-height: 1098px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -1820,10 +1826,6 @@ html {
   font-family: "Montserrat", "Arial", sans-serif;
 }
 
-.form-container {
-  width: 403px;
-}
-
 .form-container form {
   background-color: #011c40;
   color: #f9fbfd;
@@ -1849,10 +1851,13 @@ html {
 .form-container input {
   width: 303px;
   height: 43px;
-  margin-bottom: 20px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   border: 0;
+}
+
+.form-container div {
+  margin-bottom: 20px;
 }
 
 .form-container input {
@@ -1870,11 +1875,11 @@ html {
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
-  margin-bottom: 20px;
-  margin-top: 5px;
+  margin-top: 25px;
   padding-left: 10px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  cursor: pointer;
 }
 
 .form-container label input {
@@ -1883,6 +1888,8 @@ html {
   margin-right: 13px;
   position: relative;
   padding: 0;
+  cursor: pointer;
+  -webkit-appearance: none;
 }
 
 .form-container label input::after {
@@ -1929,6 +1936,9 @@ html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   border: 0;
+  cursor: pointer;
+  margin-top: 10px;
+  -webkit-appearance: none;
 }
 
 .form-container button:hover,
@@ -2020,6 +2030,7 @@ html {
 .contacts-text__phone {
   position: relative;
   padding-left: 25px;
+  margin-right: auto;
 }
 
 .contacts-text__phone::before {
@@ -2241,6 +2252,9 @@ html {
 }
 
 .no-overflow {
+  height: 100%;
+  width: 100%;
+  position: fixed;
   overflow: hidden;
 }
 
@@ -2253,9 +2267,10 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: rgba(3, 16, 27, 0.7);
+  background-color: rgba(0, 43, 102, 0.5);
   z-index: 7;
   margin: 0;
+  overflow-y: auto;
 }
 
 .modal-container--closed {
@@ -2303,7 +2318,7 @@ html {
   top: 0;
   right: 0;
   width: 89%;
-  min-height: 568px;
+  min-height: 100%;
   padding: 20px 3px 20px 15px;
 }
 
@@ -2370,8 +2385,14 @@ html {
 }
 
 @media (min-width: 1024px) {
-  .products-list__item {
-    max-width: 260px;
+  .products-list {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .form-container {
+    width: 403px;
   }
 }
 
@@ -2392,10 +2413,9 @@ html {
   }
 
   .main-header__wrapper {
-    max-width: 698px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    padding-top: 15px;
+    padding: 15px 45px 10px 45px;
   }
 
   .main-header__logo {
@@ -2412,11 +2432,9 @@ html {
 
   .main-offer__wrapper {
     width: 100%;
-    padding-left: 0;
-    padding-right: 10px;
+    padding: 0 35px 10px 35px;
     padding-bottom: 0;
     margin: 0 auto 10px;
-    max-width: 678px;
   }
 
   .main-offer__header {
@@ -2443,7 +2461,8 @@ html {
   }
 
   .main-advert__wrapper {
-    max-width: 678px;
+    padding-left: 35px;
+    padding-right: 35px;
   }
 
   .main-advert__text {
@@ -2457,8 +2476,9 @@ html {
   }
 
   .advantages__wrapper {
-    max-width: 678px;
     padding-top: 57px;
+    padding-left: 35px;
+    padding-right: 35px;
   }
 
   .advantages__header {
@@ -2502,10 +2522,40 @@ html {
   .products-list {
     -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);
+    display: -ms-grid;
+    display: grid;
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
+    row-gap: 30px;
   }
 
   .products-list__item {
-    max-width: 309px;
+    min-width: 309px;
+    width: 40.23vw;
+    height: 50.26vw;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+
+  .card-back {
+    padding: 30px 35px 35px;
+  }
+
+  .card-back__header {
+    font-size: 2.3vw;
+    line-height: 3vw;
+  }
+
+  .card-back__point {
+    font-size: 1.8vw;
+    line-height: 2.7vw;
+  }
+
+  .card-back__description {
+    font-size: 1.8vw;
+    line-height: 2.5vw;
   }
 
   .products {
@@ -2515,8 +2565,9 @@ html {
 
   .products__wrapper {
     margin: 0;
-    max-width: 678px;
     margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .products__header {
@@ -2527,6 +2578,7 @@ html {
   .products-item__header {
     left: 35px;
     bottom: 10px;
+    font-size: 2.3vw;
   }
 
   .main-form {
@@ -2543,6 +2595,8 @@ html {
     flex-direction: column;
     text-align: center;
     padding-top: 86px;
+    min-width: 403px;
+    width: 100%;
   }
 
   .main-form__text {
@@ -2552,8 +2606,26 @@ html {
     margin-bottom: 50px;
   }
 
+  .form-container {
+    min-width: 403px;
+    width: 53.8%;
+  }
+
+  .form-container form {
+    width: 100%;
+    padding: 25px 45px 50px;
+  }
+
   .form-container h3 {
     text-align: left;
+  }
+
+  .form-container input {
+    width: 100%;
+  }
+
+  .form-container button {
+    margin-top: 12px;
   }
 
   .map {
@@ -2570,7 +2642,8 @@ html {
   }
 
   .contacts__wrapper {
-    max-width: 678px;
+    padding-left: 35px;
+    padding-right: 35px;
   }
 
   .contacts__text {
@@ -2610,9 +2683,10 @@ html {
   }
 
   .main-footer__container {
-    max-width: 720px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    padding-right: 15px;
+    padding-left: 35px;
   }
 
   .main-footer__logo {
@@ -2665,7 +2739,7 @@ html {
   }
 
   .main-form-text__description {
-    width: 73%;
+    width: 65%;
     margin-right: 0;
     text-align: center;
     margin: 0 auto;
@@ -2730,7 +2804,8 @@ html {
   }
 
   .main-offer {
-    min-height: 505px;
+    min-height: 500px;
+    padding-top: 85px;
     background-image: url("../img/main-image/main-image-mobile.webp");
     background-size: cover;
   }
@@ -2766,6 +2841,9 @@ html {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 5px;
   }
 
   .main-advert__text {
@@ -2784,6 +2862,8 @@ html {
 
   .advantages__wrapper {
     padding-top: 27px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .advantages__list {
@@ -2828,11 +2908,17 @@ html {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    row-gap: 0;
   }
 
   .products-list__item {
-    width: 100%;
-    max-width: 270px;
+    width: 80vw;
+    height: 120vw;
+    min-height: 386px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 30px;
+    min-width: 270px;
   }
 
   .card-back {
@@ -2841,11 +2927,34 @@ html {
   }
 
   .card-back__header {
-    margin-bottom: 13px;
+    margin-bottom: 15px;
+    font-size: 5.5vw;
+    line-height: 7.8vw;
+  }
+
+  .card-back__point {
+    margin-bottom: 5px;
+    font-size: 4.4vw;
+    line-height: 5.9vw;
+  }
+
+  .card-back__description {
+    margin-bottom: 9px;
+    font-size: 4.3vw;
+    line-height: 5.5vw;
+  }
+
+  .card-back__button {
+    font-size: 4.5vw;
   }
 
   .products {
-    padding: 55px 25px 65px;
+    padding: 55px 25px 35px;
+  }
+
+  .products__wrapper {
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .products__header {
@@ -2858,6 +2967,8 @@ html {
     left: 25px;
     bottom: 15px;
     margin-bottom: 0;
+    font-size: 5.5vw;
+    line-height: 9vw;
   }
 
   .main-form {
@@ -2869,6 +2980,7 @@ html {
 
   .main-form__wrapper {
     padding-top: 60px;
+    min-width: 290px;
   }
 
   .main-form__text {
@@ -2877,7 +2989,8 @@ html {
   }
 
   .form-container {
-    width: 290px;
+    min-width: 290px;
+    width: 90%;
   }
 
   .form-container form {
@@ -2890,7 +3003,7 @@ html {
   }
 
   .form-container input {
-    width: 230px;
+    width: 100%;
   }
 
   .form-container label {
@@ -2927,6 +3040,10 @@ html {
     max-width: 150px;
   }
 
+  .form-container button {
+    margin-top: 0;
+  }
+
   .map {
     background-image: url("../img/map/map-mobile.webp");
     margin-right: 0;
@@ -2945,6 +3062,8 @@ html {
     -webkit-box-direction: reverse;
     -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .contacts-text {

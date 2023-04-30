@@ -5,9 +5,10 @@
   left: 0;
   width: 100%;
   display: flex;
-  background-color: rgba(3, 16, 27, 0.7);
+  background-color: rgba(0, 43, 102, 0.5);
   z-index: 7;
   margin: 0;
+  overflow-y: auto;
 }
 
 .modal-container--closed {

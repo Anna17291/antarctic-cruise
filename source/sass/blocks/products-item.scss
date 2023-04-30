@@ -40,12 +40,15 @@
   @media (max-width: $tablet-width) {
     left: 35px;
     bottom: 10px;
+    font-size: 2.3vw;
   }
 
   @media (max-width: $mobile-width) {
     left: 25px;
     bottom: 15px;
     margin-bottom: 0;
+    font-size: 5.5vw;
+    line-height: 9vw;
   }
 }
 

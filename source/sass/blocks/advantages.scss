@@ -27,12 +27,16 @@
   box-sizing: border-box;
 
   @media (max-width: $tablet-width) {
-    max-width: 678px;
+    //max-width: 678px;
     padding-top: 57px;
+    padding-left: 35px;
+    padding-right: 35px;
   }
 
   @media (max-width: $mobile-width) {
     padding-top: 27px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 

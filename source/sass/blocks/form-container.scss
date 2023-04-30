@@ -1,8 +1,18 @@
 .form-container {
-  width: 403px;
+
+
+  @media (min-width: $desktop-width) {
+    width: 403px;
+  }
+
+  @media (max-width: $tablet-width) {
+    min-width: 403px;
+    width: 53.8%;
+  }
 
   @media (max-width: $mobile-width) {
-    width: 290px;
+    min-width: 290px;
+    width: 90%;
   }
 }
 
@@ -13,6 +23,11 @@
   padding: 25px 50px 50px;
   width: 100%;
   box-sizing: border-box;
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    padding: 25px 45px 50px;
+  }
 
   @media (max-width: $mobile-width) {
     padding: 17px 30px 40px 27px;
@@ -43,14 +58,23 @@
 .form-container input {
   width: 303px;
   height: 43px;
-  margin-bottom: 20px;
+  // margin-bottom: 20px;
   box-sizing: border-box;
   border: 0;
 
+  @media (max-width: $tablet-width) {
+    width: 100%;
+  }
+
   @media (max-width: $mobile-width) {
-    width: 230px;
+    width: 100%;
   }
 }
+
+.form-container div {
+  margin-bottom: 20px;
+}
+
 
 .form-container input {
   padding: 11px 16px;
@@ -60,10 +84,12 @@
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  margin-bottom: 20px;
-  margin-top: 5px;
+  //margin-bottom: 30px;
+  margin-top: 25px;
+
   padding-left: 10px;
   box-sizing: border-box;
+  cursor: pointer;
 
   @media (max-width: $mobile-width) {
     margin-top: 1px;
@@ -78,6 +104,9 @@
   margin-right: 13px;
   position: relative;
   padding: 0;
+  cursor: pointer;
+
+  -webkit-appearance: none;
 
   @media (max-width: $mobile-width) {
     margin-top: 5px;
@@ -149,9 +178,21 @@
   padding: 10px;
   box-sizing: border-box;
   border: 0;
+  cursor: pointer;
+  margin-top: 10px;
+
+  -webkit-appearance: none;
 
   &:hover,
   &:focus {
     opacity: 0.7;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-top: 12px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-top: 0;
   }
 }

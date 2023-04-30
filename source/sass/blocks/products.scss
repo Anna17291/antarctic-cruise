@@ -2,7 +2,7 @@
   width: auto;
   display: flex;
   flex-direction: column;
-  padding: 85px 10px 120px;
+  padding: 85px 10px 90px;
   min-height: 1098px;
   box-sizing: border-box;
 
@@ -12,8 +12,7 @@
   }
 
   @media (max-width: $mobile-width) {
-    padding: 55px 25px 65px;
-
+    padding: 55px 25px 35px;
   }
 }
 
@@ -26,8 +25,15 @@
 
   @media (max-width: $tablet-width) {
     margin: 0;
-    max-width: 678px;
+    //max-width: 678px;
     margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
