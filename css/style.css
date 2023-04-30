@@ -3023,7 +3023,7 @@ html {
   }
 
   .form-container label input::after {
-    top: -12px;
+    top: -5px;
     left: -4px;
     width: 20px;
     height: 20px;
